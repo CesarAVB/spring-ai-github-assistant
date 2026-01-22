@@ -46,11 +46,12 @@
 		</dependency>
 		
         <!-- LANGCHAIN4J GOOGLE AI GEMINI SPRING BOOT STARTER - Integração com LangChain4j e Google AI Gemini -->
-        <dependency>
-            <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-google-ai-gemini-spring-boot-starter</artifactId>
-            <version>1.7.1-beta14</version>
-        </dependency>
+		<dependency>
+		    <groupId>dev.langchain4j</groupId>
+		    <artifactId>langchain4j-google-ai-gemini</artifactId>
+		    <version>1.10.0</version>
+		    <scope>compile</scope>
+		</dependency>
         
         <!-- LANGCHAIN4J SPRING BOOT STARTER - Integração do LangChain4j com Spring Boot -->
         <dependency>
