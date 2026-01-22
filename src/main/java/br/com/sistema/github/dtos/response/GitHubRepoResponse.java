@@ -1,9 +1,12 @@
 package br.com.sistema.github.dtos.response;
 
-import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.List;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Builder;
+
 @Schema(description = "Response com lista de repositórios")
+@Builder
 public record GitHubRepoResponse(
         
     @Schema(description = "Total de repositórios", example = "15")
@@ -14,6 +17,7 @@ public record GitHubRepoResponse(
     
 ) {
     @Schema(description = "Informações de um repositório")
+    @Builder
     public record RepoInfo(
             
         @Schema(description = "Nome do repositório", example = "spring-boot-api")
