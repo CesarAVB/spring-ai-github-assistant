@@ -8,19 +8,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-/**
- * Configuração CORS (Cross-Origin Resource Sharing) para GitHub Assistant.
- * 
- * Permite que o frontend (Angular, React, Vue, etc) acesse a API
- * de diferentes origens (localhost:4200, domínio de produção, etc).
- * 
- * Segurança:
- * - Desenvolvimento: Permite todas as origens (localhost)
- * - Produção: Deve restringir apenas origens confiáveis
- * 
- * @author César Augusto
- * @version 1.0.0
- */
 @Configuration
 public class CorsConfig {
     
