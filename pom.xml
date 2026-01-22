@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.5.9</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>br.com.sistema</groupId>
+	<artifactId>spring-ai-github-assistant</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-ai-github-assistant</name>
+	<description>Microserviço inteligente especializado em automação e análise de repositórios GitHub usando IA generativa (Google Gemini).      Oferece operações avançadas como listagem de repositórios, análise de código-fonte, gerenciamento de arquivos,      criação e edição de conteúdo, e gerenciamento de issues/pull requests através de linguagem natural.      Integrado com GitHub API e LangChain4j para processamento de linguagem natural e orquestração de agentes de IA.</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>21</java.version>
+	</properties>
+	<dependencies>
+		
+		<!-- SPRING WEB - Starter para aplicações web (inclui Web MVC) -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- SPRING BOOT DEVTOOLS - Ferramentas para desenvolvimento, como reinício automático e live reload -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		
+        <!-- LANGCHAIN4J GOOGLE AI GEMINI SPRING BOOT STARTER - Integração com LangChain4j e Google AI Gemini -->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-google-ai-gemini-spring-boot-starter</artifactId>
+            <version>1.7.1-beta14</version>
+        </dependency>
+        
+        <!-- GitHub API -->
+        <dependency>
+            <groupId>org.kohsuke</groupId>
+            <artifactId>github-api</artifactId>
+            <version>1.321</version>
+        </dependency>
+        
+        <!-- LOMBOK - Biblioteca para reduzir código boilerplate em Java -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        
+        <!-- SPRINGDOC OPENAPI UI - Geração automática de documentação OpenAPI para APIs REST -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+		
+		<!-- SPRING TEST - Starter para testes unitários e de integração com Spring Boot -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
